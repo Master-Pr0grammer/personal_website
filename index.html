@@ -1,46 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Ethan McCartney">
-    <meta name="description" content="my website's home page">
-    <title>Ethan McCartney - Home</title>
-    <link rel="icon" href="images/site_icon.png">
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan McCartney | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1 class="main_title">Home Page</h1>
-        <p class="main_description">Hello there! <br>My name is Ethan McCartney and welcome to my website! <br>Explore around the site to learn more about me!</p>
-
-        <h2>Pages:</h2>
-        <ul class="indent">
-            <li>
-                <a href="about_me.html">About Me</a>
-            </li>
-
-            <li>
-                <a href="projects.html">My Projects</a>
-            </li>
-        </ul>
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">&lt;EM /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <canvas class="hero-canvas" id="matrixCanvas"></canvas>
+        <div class="hero-content fade-in">
+            <div class="hero-badge">Available for opportunities</div>
+            <h1>Ethan McCartney</h1>
+            <p class="hero-subtitle">Software & Mechanical Engineer</p>
+            <div class="hero-degree">
+                <span class="degree-pill">BS in Computer Science</span>
+                <span class="degree-pill">BS in Mechanical Engineering</span>
+                <span class="degree-pill">Minor in Artificial Intelligence</span>
+            </div>
+            <p class="hero-description">
+                Building robust systems at the intersection of AI/Robotics, software & mechanical engineering, and high-performance computing.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="resume.pdf" class="btn btn-secondary" download="Resume - Ethan McCartney.pdf">Download Resume</a>
+                <a href="https://github.com/Master-Pr0grammer" target="_blank" class="btn btn-secondary">
+                    GitHub
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="mailto:ethanmccrtn@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/Master-Pr0grammer" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </header>
-
-    <br>
-    <hr>
-    <br>
-
-    <main>
-        <p><em>More to come in the future (still a work in progress)</em></p>
-    </main>
-
-    <br>
-    <hr>
-
-    <p>
-        <a href="#">Back to Top</a>
-    </p>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">About Me</div>
+                <h2 class="section-title">Engineering with Purpose</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <p>
+                        I'm a software and mechanical engineer passionate about building systems that solve real-world problems. 
+                        My work spans across reinforcement learning, high-performance computing, embedded systems, and mechanical engineering.
+                    </p>
+                    <p>
+                        I recently graduated with a Computer Science and Mechanical Engineering degree from Rensselaer Polytechnic Institute, 
+                        with a minor in Artificial Intelligence. I thrive on the intersection of theory and practice, consistently seeking to understand the "why" behind the systems I build.
+                    </p>
+                </div>
+                <div class="about-stats fade-in">
+                    <div class="stat-card">
+                        <div class="stat-value">3.6</div>
+                        <div class="stat-label">Cumulative GPA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label">Programming Languages Known</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">3.84</div>
+                        <div class="stat-label">CS Major GPA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="projects-header fade-in">
+                <div>
+                    <div class="section-label">Portfolio</div>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="engineering">Engineering</button>
+                    <button class="filter-btn" data-filter="software">Software Engineering</button>
+                    <button class="filter-btn" data-filter="machinelearning">Machine Learning</button>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in project-category engineering" data-project="1" data-category="engineering">
+                    <div class="project-header">
+                        <h3 class="project-title">Aircraft Wing Spar Numerical Design Optimization</h3>
+                        <span class="project-date"><span class="date-line">Nov 2025 -</span><span class="date-line">Dec 2025</span></span>
+                    </div>
+                    <p class="project-description">
+                        Engineered a robust MATLAB-based constrained design optimization using Gauss-Hermite quadrature and complex-step gradient computation to minimize the spar mass of an experimental high-performance UAV while enforcing stress safety margins.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">MATLAB</span>
+                        <span class="tag highlight">Optimization</span>
+                        <span class="tag">Gauss-Hermite Quadrature</span>
+                        <span class="tag">Complex-Step</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category machinelearning" data-project="2" data-category="machinelearning">
+                    <div class="project-header">
+                        <h3 class="project-title">RL Training Environment</h3>
+                        <span class="project-date"><span class="date-line">Jan 2024 -</span><span class="date-line">Jul 2024</span></span>
+                    </div>
+                    <p class="project-description">
+                        Vectorized a 2-D obstacle-avoidance game in PyTorch, enabling 10k+ parallel simulations on a single consumer GPU. Designed self-supervised reward signals and achieved human-level performance.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">PyTorch</span>
+                        <span class="tag highlight">RL</span>
+                        <span class="tag">Vectorization</span>
+                        <span class="tag">GPU</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software" data-project="3" data-category="software">
+                    <div class="project-header">
+                        <h3 class="project-title">C++ Game Engine</h3>
+                        <span class="project-date"><span class="date-line">Dec 2023 -</span><span class="date-line">Present</span></span>
+                    </div>
+                    <p class="project-description">
+                        Built a cross-platform C++ OpenGL engine with model loading, camera/input systems, transforms, and basic physics/collision. Implemented lighting/shader pipeline and achieved over 3,000 FPS.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">C++</span>
+                        <span class="tag highlight">OpenGL</span>
+                        <span class="tag">Graphics</span>
+                        <span class="tag">Shaders</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category machinelearning" data-project="4" data-category="machinelearning">
+                    <div class="project-header">
+                        <h3 class="project-title">Neural Network Library</h3>
+                        <span class="project-date"><span class="date-line">May 2023 -</span><span class="date-line">Jul 2023</span></span>
+                    </div>
+                    <p class="project-description">
+                        Built a fully-featured neural network library in Python + NumPy supporting arbitrary layer configurations, forward/back-propagation, custom loss/optimizer modules, and a high-level training API.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">Python</span>
+                        <span class="tag highlight">NumPy</span>
+                        <span class="tag">ML</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category machinelearning" data-project="5" data-category="machinelearning">
+                    <div class="project-header">
+                        <h3 class="project-title">Language Model from Scratch</h3>
+                        <span class="project-date"><span class="date-line">Jul 2023 -</span><span class="date-line">Aug 2023</span></span>
+                    </div>
+                    <p class="project-description">
+                        Implemented a decoder-only Transformer from scratch in PyTorch with causal self-attention, MLP blocks, and full training loop. Trained a ~20M parameter model with beam-search decoding.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">PyTorch</span>
+                        <span class="tag highlight">Transformer</span>
+                        <span class="tag">LLM</span>
+                        <span class="tag">Attention</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software engineering" data-project="6" data-category="software engineering">
+                    <div class="project-header">
+                        <h3 class="project-title">Robotic Arm Kinematics</h3>
+                        <span class="project-date"><span class="date-line">Nov 2023 -</span><span class="date-line">Dec 2023</span></span>
+                    </div>
+                    <p class="project-description">
+                        Implemented forward and inverse kinematics for a 6-DOF robotic arm using Jacobian-inverse approach with PID joint control. Fused vision feedback with IK to track moving targets.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">Python</span>
+                        <span class="tag highlight">Kinematics</span>
+                        <span class="tag">Robotics</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category engineering" data-project="7" data-category="engineering">
+                    <div class="project-header">
+                        <h3 class="project-title">Self-Balancing Pendulum</h3>
+                        <span class="project-date"><span class="date-line">Feb 2025 -</span><span class="date-line">May 2025</span></span>
+                    </div>
+                    <p class="project-description">
+                        Designed a control system for an inverted pendulum controlled by a 20N brushless motor driving a reaction wheel. Implemented PID controller achieving 12% overshoot with 0.8s settling time.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">Control Systems</span>
+                        <span class="tag highlight">PID</span>
+                        <span class="tag">Feedback</span>
+                        <span class="tag">ZPK</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category engineering" data-project="8" data-category="engineering">
+                    <div class="project-header">
+                        <h3 class="project-title">Heat Exchanger Design</h3>
+                        <span class="project-date"><span class="date-line">Sept 2025 -</span><span class="date-line">Dec 2025</span></span>
+                    </div>
+                    <p class="project-description">
+                        Engineered a liquid-cooled heat sink for a 1m² photovoltaic panel, keeping cells at ≤35°C under 1000W/m² irradiance. Achieved max temperature of 34°C with pump using only 0.222% of panel power.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">Thermal Design</span>
+                        <span class="tag highlight">Fluid Dynamics</span>
+                        <span class="tag">CAD</span>
+                        <span class="tag">Optimization</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software" data-project="9" data-category="software">
+                    <div class="project-header">
+                        <h3 class="project-title">Wordle Server</h3>
+                        <span class="project-date"><span class="date-line">Mar 2024</span></span>
+                    </div>
+                    <p class="project-description">
+                        Built a multithreaded TCP server in C using POSIX sockets supporting concurrent clients with mutex-protected shared state and custom message protocol with robust input validation.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">C</span>
+                        <span class="tag highlight">Networking</span>
+                        <span class="tag">Multithreading</span>
+                        <span class="tag">Sockets</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software" data-project="10" data-category="software">
+                    <div class="project-header">
+                        <h3 class="project-title">LLM Full-Stack Integration</h3>
+                        <span class="project-date"><span class="date-line">May 2024 -</span><span class="date-line">Aug 2024</span></span>
+                    </div>
+                    <p class="project-description">
+                        Designed and deployed a self-hosted LLM llama.cpp server with OpenAI-compatible API. Integrated Retrieval-Augmented Generation with vector embeddings and function-calling capabilities.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">FastAPI</span>
+                        <span class="tag highlight">LLM</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">Flask</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software" data-project="11" data-category="software">
+                    <div class="project-header">
+                        <h3 class="project-title">CPU Scheduling Algorithms</h3>
+                        <span class="project-date"><span class="date-line">Mar 2024 -</span><span class="date-line">Apr 2024</span></span>
+                    </div>
+                    <p class="project-description">
+                        Implemented and benchmarked FCFS, SJF, SRTF, and Round Robin scheduling algorithms. Built workload generator and produced report comparing tradeoffs under I/O-bound and CPU-bound mixes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">Algorithms</span>
+                        <span class="tag highlight">OS</span>
+                        <span class="tag">Benchmarking</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software" data-project="12" data-category="software">
+                    <div class="project-header">
+                        <h3 class="project-title">Recursive Crossword Puzzle</h3>
+                        <span class="project-date"><span class="date-line">Mar 2023</span></span>
+                    </div>
+                    <p class="project-description">
+                        Engineered a recursive algorithm in C++ to generate all possible crossword puzzles from user-defined word lists. Utilized depth-first and breadth-first search with strategic symmetry utilization.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">C++</span>
+                        <span class="tag highlight">Algorithms</span>
+                        <span class="tag">Backtracking</span>
+                        <span class="tag">DFS</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software" data-project="13" data-category="software">
+                    <div class="project-header">
+                        <h3 class="project-title">Wordle Solver</h3>
+                        <span class="project-date"><span class="date-line">Sept 2021 -</span><span class="date-line">Jan 2022</span></span>
+                    </div>
+                    <p class="project-description">
+                        Developed an information-theoretic Wordle solver that evaluates the full vocabulary to choose guesses with maximal entropy reduction and achieves a 100% win rate.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">Algorithms</span>
+                        <span class="tag highlight">Python</span>
+                        <span class="tag">Information Theory</span>
+                        <span class="tag">Optimization</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category machinelearning" data-project="14" data-category="machinelearning">
+                    <div class="project-header">
+                        <h3 class="project-title">Visualizing AI Learning</h3>
+                        <span class="project-date"><span class="date-line">Summer</span><span class="date-line">2023</span></span>
+                    </div>
+                    <p class="project-description">
+                        Built a visualization pipeline that turns neural network training into a video, making it possible to literally watch an AI learn an image over time.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">PyTorch</span>
+                        <span class="tag highlight">Visualization</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">GPU</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software" data-project="15" data-category="software">
+                    <div class="project-header">
+                        <h3 class="project-title">Platform Jumper (Python Game)</h3>
+                        <span class="project-date"><span class="date-line">Dec 2020 -</span><span class="date-line">Jan 2021</span></span>
+                    </div>
+                    <p class="project-description">
+                        Engineered a 2-D platformer in Python and Pygame with dynamic-hitbox collision, particle-trail animation, and an infinitely tiling background.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">Python</span>
+                        <span class="tag highlight">Pygame</span>
+                        <span class="tag">Collision</span>
+                        <span class="tag">Animation</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+                <div class="project-card fade-in project-category software" data-project="16" data-category="software">
+                    <div class="project-header">
+                        <h3 class="project-title">Space Raiders (Python Game)</h3>
+                        <span class="project-date"><span class="date-line">Aug 2020 -</span><span class="date-line">Sept 2020</span></span>
+                    </div>
+                    <p class="project-description">
+                        Created a Python and Pygame arcade prototype in a single day, with dynamic asteroid-speed scaling, score tracking, and collision-based survival gameplay.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag highlight">Python</span>
+                        <span class="tag highlight">Pygame</span>
+                        <span class="tag">Arcade</span>
+                        <span class="tag">First Project</span>
+                    </div>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Experience</div>
+                <h2 class="section-title">Professional Background</h2>
+            </div>
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Reinforcement Learning Research Assistant</h3>
+                        <p class="experience-company">Rensselaer Polytechnic Institute</p>
+                    </div>
+                    <span class="experience-date">Jan 2023 - Jan 2025</span>
+                </div>
+                <p class="experience-description">
+                    Developed and evaluated an RL policy-gradient ('L2A') method for Ising spin glass/MaxCut problems using deterministic REINFORCE. Integrated local search and large-scale parallel sampling to match best-known benchmark solutions on GSet MaxCut and Ising instances.
+                </p>
+            </div>
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Systems Engineer Intern</h3>
+                        <p class="experience-company">Potdevin Machine</p>
+                    </div>
+                    <span class="experience-date">May 2023 - Aug 2023</span>
+                </div>
+                <p class="experience-description">
+                    Constructed bill of materials database containing information on raw materials, manufactured parts, routing information, and vendors. Automated BOM migration by programming Python-based automation tools, saving hundreds of manual data entry hours. Designed and implemented a new company-wide part numbering system.
+                </p>
+            </div>
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Physics I / II Tutor & Mentoring</h3>
+                        <p class="experience-company">Rensselaer Polytechnic Institute</p>
+                    </div>
+                    <span class="experience-date">Aug 2022 - May 2023</span>
+                </div>
+                <p class="experience-description">
+                    Prepared lessons and conducted two weekly classes of 10-15 students each, reviewing Physics I lectures, practice problems, and quizzes. Proctored several practice exams to help students prepare for exams. Provided weekly drop-in individual tutoring sessions with physics I and II students.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Capabilities</div>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3>Programming Languages</h3>
+                    <p>Proficient in C/C++, Python, JavaScript, with additional experience in MATLAB, Java, Haskell, and various assembly languages for low-level systems programming and optimization.</p>
+                    <div class="skill-pills">
+                        <span class="skill-pill">C</span>
+                        <span class="skill-pill">C++</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">MATLAB</span>
+                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">Haskell</span>
+                        <span class="skill-pill">Assembly</span>
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Machine Learning & AI</h3>
+                    <p>Experienced in building neural networks from scratch using PyTorch and NumPy. Familiar with transformer architectures, reinforcement learning, and RAG implementations.</p>
+                    <div class="skill-pills">
+                        <span class="skill-pill">PyTorch</span>
+                        <span class="skill-pill">NumPy</span>
+                        <span class="skill-pill">Transformer</span>
+                        <span class="skill-pill">RL</span>
+                        <span class="skill-pill">Neural Networks</span>
+                        <span class="skill-pill">Deep Learning</span>
+                        <span class="skill-pill">Attention</span>
+                        <span class="skill-pill">RAG</span>
+                        <span class="skill-pill">LLM</span>
+                        <span class="skill-pill">Function Calling</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Systems Engineering</h3>
+                    <p>Strong foundation in control theory, optimization methods, and systems design. Applied complex-step gradient computation and Gauss-Hermite quadrature in engineering optimization.</p>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Control Systems</span>
+                        <span class="skill-pill">PID</span>
+                        <span class="skill-pill">Optimization</span>
+                        <span class="skill-pill">Feedback</span>
+                        <span class="skill-pill">ZPK</span>
+                        <span class="skill-pill">Gauss-Hermite Quadrature</span>
+                        <span class="skill-pill">Complex-Step</span>
+                        <span class="skill-pill">Uncertainty</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Graphics & Game Dev</h3>
+                    <p>Built cross-platform C++ game engines with OpenGL, implemented shader pipelines, and developed custom physics/collision systems with real-time rendering.</p>
+                    <div class="skill-pills">
+                        <span class="skill-pill">C++</span>
+                        <span class="skill-pill">OpenGL</span>
+                        <span class="skill-pill">Graphics</span>
+                        <span class="skill-pill">Shaders</span>
+                        <span class="skill-pill">Physics</span>
+                        <span class="skill-pill">Rendering</span>
+                        <span class="skill-pill">Collision</span>
+                        <span class="skill-pill">Real-time</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Networking & Systems</h3>
+                    <p>Experienced in building multithreaded TCP servers, implementing custom protocols, and working with POSIX sockets for network programming.</p>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Networking</span>
+                        <span class="skill-pill">Multithreading</span>
+                        <span class="skill-pill">Sockets</span>
+                        <span class="skill-pill">TCP Server</span>
+                        <span class="skill-pill">Protocols</span>
+                        <span class="skill-pill">Concurrency</span>
+                        <span class="skill-pill">API</span>
+                        <span class="skill-pill">FastAPI</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Tools & Platforms</h3>
+                    <p>Proficient with Git, Linux/Ubuntu, MacOS, Windows, and the Microsoft Office suite. Familiar with Siemens NX for CAD design and various development tools.</p>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">Linux</span>
+                        <span class="skill-pill">Ubuntu</span>
+                        <span class="skill-pill">macOS</span>
+                        <span class="skill-pill">Windows</span>
+                        <span class="skill-pill">Siemens NX</span>
+                        <span class="skill-pill">CAD</span>
+                        <span class="skill-pill">Office</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container fade-in">
+            <h2>Let's Connect</h2>
+            <p>
+                I'm always interested in hearing about new opportunities, research collaborations, or interesting technical challenges.
+            </p>
+            <a href="mailto:ethanmccrtn@gmail.com" class="contact-email">ethanmccrtn@gmail.com</a>
+            <div class="social-links" style="justify-content: center;">
+                <a href="https://github.com/Master-Pr0grammer" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                    </svg>
+                </a>
+                <a href="mailto:ethanmccrtn@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <button class="modal-close" id="modalClose">
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <h2 class="modal-title" id="modalTitle">Project Title</h2>
+                <span class="modal-date" id="modalDate">Date</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <span class="modal-section-title">Overview</span>
+                    <p class="modal-description" id="modalDescription">Project description goes here.</p>
+                </div>
+                <div class="modal-section modal-media" id="modalMedia"></div>
+                <div class="modal-section">
+                    <span class="modal-section-title">Technical Details</span>
+                    <ul class="modal-technical" id="modalTechnical">
+                        <li>Technical detail 1</li>
+                        <li>Technical detail 2</li>
+                        <li>Technical detail 3</li>
+                    </ul>
+                </div>
+                <div class="modal-section modal-links-section" id="modalLinks"></div>
+            </div>
+            <div class="modal-footer" id="modalFooter">
+                <span class="tag highlight">Tag</span>
+                <span class="tag highlight">Tag</span>
+                <span class="tag highlight">Tag</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
