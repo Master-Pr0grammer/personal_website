@@ -169,6 +169,13 @@
                     'GPU acceleration for scalable training',
                     'Human-level performance achieved'
                 ],
+                media: [
+                    {
+                        type: 'video',
+                        src: 'assets/videos/rl-training-environment-(space-raiders-ai-demo).mp4',
+                        caption: 'RL policy playing Space Raiders after training'
+                    }
+                ],
                 tags: ['PyTorch', 'RL', 'Vectorization', 'GPU', 'Deep Learning'],
                 category: 'machinelearning'
             },
@@ -188,8 +195,13 @@
                 media: [
                     {
                         type: 'video',
+                        src: 'assets/videos/c++-game-engine-from-scratch-(updated-demo).mp4',
+                        caption: 'Updated game engine demo with physics, collisions, and flashlight lighting'
+                    },
+                    {
+                        type: 'video',
                         src: 'assets/videos/c++-game-engine-from-scratch-(demo).mp4',
-                        caption: 'Game engine demo'
+                        caption: 'Original game engine demo with model loading and free camera'
                     },
                     {
                         type: 'image',
@@ -239,6 +251,12 @@
                     'Beam-search decoding for inference',
                     'Validation loss and perplexity evaluation'
                 ],
+                links: [
+                    {
+                        label: 'GitHub Repository',
+                        href: 'https://github.com/Master-Pr0grammer/LLM-From-Scratch'
+                    }
+                ],
                 tags: ['PyTorch', 'Transformer', 'LLM', 'Attention', 'Deep Learning'],
                 category: 'machinelearning'
             },
@@ -254,6 +272,18 @@
                     'Real-time object detection',
                     'Vision feedback integration with IK',
                     'Moving target tracking'
+                ],
+                media: [
+                    {
+                        type: 'video',
+                        src: 'assets/videos/robotic-arm-kinematics-(object-tracking).mp4',
+                        caption: 'Robotic arm object tracking demo'
+                    },
+                    {
+                        type: 'video',
+                        src: 'assets/videos/robotic-arm-kinematics-(turns-itself-off).mp4',
+                        caption: 'Robotic arm turns itself off'
+                    }
                 ],
                 tags: ['Python', 'Kinematics', 'Robotics', 'Computer Vision', 'PID'],
                 category: 'software engineering'
@@ -683,9 +713,14 @@
             // Smooth scroll for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
+                    const href = this.getAttribute('href');
+                    if (!href || href === '#') {
+                        return;
+                    }
+
+                    const target = document.querySelector(href);
                     if (target) {
+                        e.preventDefault();
                         target.scrollIntoView({
                             behavior: 'smooth',
                             block: 'start'
